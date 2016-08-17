@@ -35,10 +35,10 @@ Setting that needed to be changed:
 `bind-address = 127.0.0.1` --> `bind-address = 0.0.0.0`
 
 Scroll to almost bottom, change setting accordingly
-```
+```INI
 wsrep_on=ON
 wsrep_provider=/usr/lib/galera/libgalera_smm.so
-wsrep_cluster_address="gcomm://<node 1 ip>,<node 2 ip>,<node x ip>" # All ip except the one you are changing cnf
+wsrep_cluster_address="gcomm://<node 1 ip>,<node 2 ip>,<node x ip>" # All ip address except this one
 binlog_format=row
 default_storage_engine=InnoDB
 innodb_autoinc_lock_mode=2
