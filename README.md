@@ -27,8 +27,8 @@ Scroll to almost bottom, change setting accordingly
 
 ## Step 5:
 Run galera_new_cluster ON THE FIRST NODE ONLY!
-Then just run `service mariadb start`
+Then just run `service mariadb start` on all nodes.
 
 ## Step 6(optional):
 To test if this working run `SHOW GLOBAL STATUS LIKE 'wsrep_cluster_size';` when you login to mysql. If it is succeed, you will see the numbers of nodes you set up.
-To test further more, run `CREATE DATABASE test`, and go to other nodes login into mysql, then run `SHOW DATABASES`.
+To test further more, run `CREATE DATABASE test`, and go to other nodes login into mysql, then run `SHOW DATABASES`, if you see `test`, then you are good to go.
