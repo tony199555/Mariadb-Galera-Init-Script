@@ -15,3 +15,7 @@ sudo ufw allow mysql
 sudo ufw enable
 
 sudo apt-get install -y iptables-persistent
+
+sudo netfilter-persistent save
+
+sudo netfilter-persistent reload
