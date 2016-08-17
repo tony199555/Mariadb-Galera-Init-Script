@@ -28,7 +28,7 @@ Scroll to almost bottom, change setting accordingly
 ```
 
 ## Step 5:
-Run galera_new_cluster ON THE FIRST NODE ONLY!
+Run `galera_new_cluster` ON THE FIRST NODE ONLY!
 Then just run `service mariadb start` on all nodes.
 
 ## Step 6(optional):
