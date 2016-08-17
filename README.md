@@ -1,0 +1,1 @@
+# Mariadb-Galera-Init-Script
