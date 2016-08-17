@@ -18,12 +18,14 @@ Change setting file on each node. It is located at /etc/mysql/my.cnf
 Setting that needed to be changed:
 `BIND_ADDRESS = 0.0.0.0`
 Scroll to almost bottom, change setting accordingly
+```
     wsrep_on=ON
     wsrep_provider=/usr/lib/galera/libgalera_smm.so
     wsrep_cluster_address="gcomm://<node 1 ip>,<node 2 ip>,<node x ip>" # All ip except the one you are changing cnf
     binlog_format=row
     default_storage_engine=InnoDB
     innodb_autoinc_lock_mode=2
+```
 
 ## Step 5:
 Run galera_new_cluster ON THE FIRST NODE ONLY!
